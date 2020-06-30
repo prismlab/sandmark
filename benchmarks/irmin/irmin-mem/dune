@@ -1,0 +1,6 @@
+(executable
+	(name read_write_bench)
+	(modules read_write_bench)
+	(libraries lwt fmt irmin))
+
+(alias (name buildbench) (deps read_write_bench.exe))
